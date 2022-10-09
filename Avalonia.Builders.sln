@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.Builders.Settings", "Avalonia.Builders.Settings\Avalonia.Builders.Settings.csproj", "{18283676-8C62-4E06-AB28-EF6957178D93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.Builders.Settings.Core", "Avalonia.Builders.Settings.Attributes\Avalonia.Builders.Settings.Core.csproj", "{F0D6FF93-3B1E-4191-9D4C-2B74BC55AC75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{18283676-8C62-4E06-AB28-EF6957178D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18283676-8C62-4E06-AB28-EF6957178D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18283676-8C62-4E06-AB28-EF6957178D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0D6FF93-3B1E-4191-9D4C-2B74BC55AC75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D6FF93-3B1E-4191-9D4C-2B74BC55AC75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0D6FF93-3B1E-4191-9D4C-2B74BC55AC75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0D6FF93-3B1E-4191-9D4C-2B74BC55AC75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
