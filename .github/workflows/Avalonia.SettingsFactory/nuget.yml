@@ -1,0 +1,41 @@
+﻿name: "Deploy SettingsFactory to NuGet"
+
+on:
+  push:
+    tags:
+      - "v*"
+
+env:
+  CSPROJ: "Avalonia.SettingsFactory/Avalonia.SettingsFactory.csproj"
+  BUILD: "${{ github.workspace }}\\build"
+  NUGET_SRC: "https://api.nuget.org/v3/index.json"
+
+jobs:
+  deploy:
+    name: "Deploy"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v2
+
+      - name: "Install DotNET"
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: "6.0.x"
+
+      - name: "Restore packages"
+        run: dotnet restore ${{ env.CSPROJ }}
+
+      - name: "Build project"
+        run: dotnet build ${{ env.CSPROJ }} --no-restore --configuration Release
+
+      - name: "Get Version"
+        id: version
+        uses: battila7/get-version-action@v2
+
+      - name: "Pack project"
+        run: dotnet pack ${{ env.CSPROJ }} --no-restore --configuration Release -p:PackageVersion=${{ steps.version.outputs.version.version-without-v }} --output {{ env.BUILD }}
+
+      - name: "Push package"
+        run: dotnet nuget push ${{ env.build }}\*.nupkg -k ${{ secrets.NUGET_AUTH }} -s ${{ NUGET_SRC }}
