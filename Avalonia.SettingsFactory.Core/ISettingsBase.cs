@@ -1,4 +1,4 @@
-﻿namespace Avalonia.Builders.Settings.Core
+﻿namespace Avalonia.SettingsFactory.Core
 {
     public interface ISettingsBase
     {

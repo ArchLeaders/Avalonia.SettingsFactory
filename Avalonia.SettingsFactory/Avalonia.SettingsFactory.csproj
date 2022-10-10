@@ -6,6 +6,19 @@
     <!--Avalonia doesen't support TrimMode=link currently,but we are working on that https://github.com/AvaloniaUI/Avalonia/issues/6892 -->
     <TrimMode>copyused</TrimMode>
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <Title>AvaloniaSettingsFactory</Title>
+    <Authors>Arch Leaders</Authors>
+    <Description>Dynamic settings page generator from only a settings object and validation rules.</Description>
+    <Copyright>© 2022 Arch Leaders</Copyright>
+    <PackageProjectUrl>https://github.com/ArchLeaders/Avalonia.Builders/tree/master/Avalonia.Builders.Settings</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ArchLeaders/Avalonia.Builders</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>avaloniaui</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <AvaloniaResource Include="Assets\**" />
@@ -29,6 +42,6 @@
     <PackageReference Include="XamlNameReferenceGenerator" Version="1.3.4" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Avalonia.Builders.Settings.Core\Avalonia.Builders.Settings.Core.csproj" />
+    <ProjectReference Include="..\Avalonia.SettingsFactory.Core\Avalonia.SettingsFactory.Core.csproj" />
   </ItemGroup>
 </Project>

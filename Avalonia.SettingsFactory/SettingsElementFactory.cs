@@ -1,7 +1,7 @@
 ﻿#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 
-using Avalonia.Builders.Settings.Core;
-using Avalonia.Builders.Settings.Extensions;
+using Avalonia.SettingsFactory.Core;
+using Avalonia.SettingsFactory.Extensions;
 using Avalonia.Controls;
 using Avalonia.Layout;
 using Avalonia.Media;
@@ -9,7 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Avalonia.Builders.Settings
+namespace Avalonia.SettingsFactory
 {
     internal class SettingsElementFactory
     {

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace Avalonia.Builders.Settings
+namespace Avalonia.SettingsFactory
 {
     /// <summary>
     /// Base interface for custom validation logic.

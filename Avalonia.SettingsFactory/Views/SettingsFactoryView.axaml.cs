@@ -1,9 +1,9 @@
-using Avalonia.Builders.Settings.Core;
-using Avalonia.Builders.Settings.ViewModels;
+using Avalonia.SettingsFactory.Core;
+using Avalonia.SettingsFactory.ViewModels;
 using Avalonia.Controls;
 using System;
 
-namespace Avalonia.Builders.Settings.Views
+namespace Avalonia.SettingsFactory.Views
 {
     public partial class SettingsFactoryView : SettingsFactory
     {

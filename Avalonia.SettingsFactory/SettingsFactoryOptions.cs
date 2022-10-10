@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-namespace Avalonia.Builders.Settings
+namespace Avalonia.SettingsFactory
 {
     public class SettingsFactoryOptions
     {

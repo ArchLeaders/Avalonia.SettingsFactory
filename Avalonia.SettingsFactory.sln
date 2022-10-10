@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.Builders.Settings", "Avalonia.Builders.Settings\Avalonia.Builders.Settings.csproj", "{18283676-8C62-4E06-AB28-EF6957178D93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalonia.SettingsFactory", "Avalonia.SettingsFactory\Avalonia.SettingsFactory.csproj", "{18283676-8C62-4E06-AB28-EF6957178D93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.Builders.Settings.Core", "Avalonia.Builders.Settings.Core\Avalonia.Builders.Settings.Core.csproj", "{F0D6FF93-3B1E-4191-9D4C-2B74BC55AC75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalonia.SettingsFactory.Core", "Avalonia.SettingsFactory.Core\Avalonia.SettingsFactory.Core.csproj", "{F0D6FF93-3B1E-4191-9D4C-2B74BC55AC75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

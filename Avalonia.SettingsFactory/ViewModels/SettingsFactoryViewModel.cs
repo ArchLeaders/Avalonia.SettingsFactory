@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Avalonia.Builders.Settings.ViewModels
+namespace Avalonia.SettingsFactory.ViewModels
 {
     public class SettingsFactoryViewModel : ReactiveObject
     {

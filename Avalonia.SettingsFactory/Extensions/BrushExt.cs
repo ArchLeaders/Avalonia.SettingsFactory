@@ -1,7 +1,7 @@
 ﻿using Avalonia.Media;
 using System;
 
-namespace Avalonia.Builders.Settings.Extensions
+namespace Avalonia.SettingsFactory.Extensions
 {
     internal static class BrushExt
     {
