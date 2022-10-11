@@ -1,6 +1,6 @@
 # Avalonia SettingsFactory
 
-[![NuGet](https://img.shields.io/nuget/v/Dock.Model.svg)](https://www.nuget.org/packages/Avalonia.SettingsFactory) [![NuGet](https://img.shields.io/nuget/dt/Dock.Model.svg)](https://www.nuget.org/packages/Avalonia.SettingsFactory)
+[![NuGet](https://img.shields.io/nuget/v/Avalonia.SettingsFactory.svg)](https://www.nuget.org/packages/Avalonia.SettingsFactory) [![NuGet](https://img.shields.io/nuget/dt/Avalonia.SettingsFactory.svg)](https://www.nuget.org/packages/Avalonia.SettingsFactory)
 
 **Avalonia SettingsFactory** is a dynamic UI library that lets you seemlessly implement a settings editor in your [Avalonia](https://github.com/AvaloniaUI/Avalonia) application using an existing settings object.
 
