@@ -8,7 +8,7 @@
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
     <Title>AvaloniaSettingsFactory</Title>
     <Authors>Arch Leaders</Authors>
-    <Description>Dynamic settings page generator from only a settings object and validation rules.</Description>
+    <Description>Dynamic UI factory that lets you seemlessly implement a dynamic settings page in your AvaloniaUI-11 application.</Description>
     <Copyright>© 2022 Arch Leaders</Copyright>
     <PackageProjectUrl>https://github.com/ArchLeaders/Avalonia.Builders/tree/master/Avalonia.Builders.Settings</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ArchLeaders/Avalonia.Builders</RepositoryUrl>
@@ -19,6 +19,8 @@
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageIcon>financial_dynamic_presentation.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
     <AvaloniaResource Include="Assets\**" />
@@ -26,6 +28,16 @@
     <EmbeddedResource Remove="Models\**" />
     <None Remove="Models\**" />
     <None Remove=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="D:\Assets\Icons\Fluent\Color\financial_dynamic_presentation.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <!--This helps with theme dll-s trimming.
