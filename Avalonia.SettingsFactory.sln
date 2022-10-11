@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalonia.SettingsFactory", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalonia.SettingsFactory.Core", "Avalonia.SettingsFactory.Core\Avalonia.SettingsFactory.Core.csproj", "{F0D6FF93-3B1E-4191-9D4C-2B74BC55AC75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.SettingsFactory.Demo", "Avalonia.SettingsFactory.Demo\Avalonia.SettingsFactory.Demo.csproj", "{D0011C58-1CB6-4132-9050-F25C12BE5EE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F0D6FF93-3B1E-4191-9D4C-2B74BC55AC75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0D6FF93-3B1E-4191-9D4C-2B74BC55AC75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0D6FF93-3B1E-4191-9D4C-2B74BC55AC75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0011C58-1CB6-4132-9050-F25C12BE5EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0011C58-1CB6-4132-9050-F25C12BE5EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0011C58-1CB6-4132-9050-F25C12BE5EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0011C58-1CB6-4132-9050-F25C12BE5EE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
