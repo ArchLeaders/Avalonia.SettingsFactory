@@ -19,7 +19,7 @@
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageIcon>financial_dynamic_presentation.png</PackageIcon>
+    <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
@@ -31,10 +31,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="D:\Assets\Icons\Fluent\Color\financial_dynamic_presentation.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
