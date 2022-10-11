@@ -6,7 +6,7 @@ on:
       - "v*"
 
 env:
-  CORE_CSPROJ: "Avalonia.SettingsFactory.Core/Avalonia.SettingsFactory.Core.csproj"
+  CORE_CSPROJ: "../Avalonia.SettingsFactory.Core/Avalonia.SettingsFactory.Core.csproj"
   CORE_BUILD: "${{ github.workspace }}/build_core"
   CORE_NUGET_SRC: "https://api.nuget.org/v3/index.json"
 
