@@ -7,7 +7,7 @@ on:
 
 env:
   CSPROJ: "Avalonia.SettingsFactory/Avalonia.SettingsFactory.csproj"
-  BUILD: "${{ github.workspace }}\\build"
+  BUILD: "${{ github.workspace }}/build"
   NUGET_SRC: "https://api.nuget.org/v3/index.json"
 
 jobs:
@@ -38,4 +38,4 @@ jobs:
         run: dotnet pack ${{ env.CSPROJ }} --no-restore --configuration Release -p:PackageVersion=${{ steps.version.outputs.version-without-v }} --output ${{ env.BUILD }}
 
       - name: "Push package"
-        run: dotnet nuget push ${{ env.BUILD }}\*.nupkg -k ${{ secrets.NUGET_AUTH }} -s ${{ env.NUGET_SRC }}
+        run: dotnet nuget push ${{ env.BUILD }}/*.nupkg -k ${{ secrets.NUGET_AUTH }} -s ${{ env.NUGET_SRC }}
