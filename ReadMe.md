@@ -4,6 +4,8 @@
 
 **Avalonia SettingsFactory** is a dynamic UI library that lets you seemlessly implement a settings editor in your [Avalonia](https://github.com/AvaloniaUI/Avalonia) application using an existing settings object.
 
+https://user-images.githubusercontent.com/80713508/195053696-49c2be25-ef9a-49ae-ab6e-263a6c53f59a.mp4
+
 ## Usage
 
 Avalonia SettingsFactory works reading a decorated [settings object](https://github.com/ArchLeaders/Avalonia.SettingsFactory/blob/master/Avalonia.SettingsFactory.Demo/Models/Settings.cs) and sending the results into a [custom view](https://github.com/ArchLeaders/Avalonia.SettingsFactory/blob/master/Avalonia.SettingsFactory.Demo/Views/SettingsView.axaml.cs) that inherits the `SettingsFactory` UserControl included in this library.
