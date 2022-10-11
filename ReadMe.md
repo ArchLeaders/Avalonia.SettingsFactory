@@ -112,8 +112,8 @@ Install with NuGet or build from [source]().
 
 #### NuGet
 ```powershell
-Install-Package Avalonia.SettingsFactory
-Install-Package Avalonia.SettingsFactory.Core
+Install-Package AvaloniaSettingsFactory
+Install-Package AvaloniaSettingsFactory.Core
 ```
 
 
