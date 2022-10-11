@@ -35,7 +35,7 @@ jobs:
         uses: battila7/get-version-action@v2
 
       - name: "Pack project"
-        run: dotnet pack ${{ env.CSPROJ }} --no-restore --configuration Release -p:PackageVersion=${{ steps.version.outputs.version.version-without-v }} --output {{ env.BUILD }}
+        run: dotnet pack ${{ env.CSPROJ }} --no-restore --configuration Release -p:PackageVersion=${{ steps.version.outputs.version-without-v }} --output {{ env.BUILD }}
 
       - name: "Push package"
         run: dotnet nuget push ${{ env.build }}\*.nupkg -k ${{ secrets.NUGET_AUTH }} -s ${{ env.NUGET_SRC }}
