@@ -1,8 +1,8 @@
 # Avalonia SettingsFactory
 
-[![NuGet](https://img.shields.io/nuget/v/Avalonia.SettingsFactory.svg)](https://www.nuget.org/packages/Avalonia.SettingsFactory) [![NuGet](https://img.shields.io/nuget/dt/Avalonia.SettingsFactory.svg)](https://www.nuget.org/packages/Avalonia.SettingsFactory)
+[![NuGet](https://img.shields.io/nuget/v/AvaloniaSettingsFactory.svg)](https://www.nuget.org/packages/AvaloniaSettingsFactory) [![NuGet](https://img.shields.io/nuget/dt/AvaloniaSettingsFactory.svg)](https://www.nuget.org/packages/AvaloniaSettingsFactory)
 
-**Avalonia SettingsFactory** is a dynamic UI library that lets you seemlessly implement a settings editor in your [Avalonia](https://github.com/AvaloniaUI/Avalonia) application using an existing settings object.
+**Avalonia SettingsFactory** is a dynamic UI library that lets you seamlessly implement a settings editor in your [Avalonia](https://github.com/AvaloniaUI/Avalonia) application using an existing settings object.
 
 https://user-images.githubusercontent.com/80713508/195053696-49c2be25-ef9a-49ae-ab6e-263a6c53f59a.mp4
 
@@ -112,8 +112,8 @@ Install with NuGet or build from [source]().
 
 #### NuGet
 ```powershell
-Install-Package Avalonia.SettingsFactory
-Install-Package Avalonia.SettingsFactory.Core
+Install-Package AvaloniaSettingsFactory
+Install-Package AvaloniaSettingsFactory.Core
 ```
 
 
