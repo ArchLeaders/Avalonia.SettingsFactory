@@ -1,6 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.SettingsFactory.Demo.Models;
+using Avalonia.SettingsFactory.Demo.ViewModels;
 using Avalonia.SettingsFactory.ViewModels;
 using Avalonia.Themes.Fluent;
 using System.Collections.Generic;
@@ -46,6 +47,16 @@ namespace Avalonia.SettingsFactory.Demo.Views
 
             // Initialize the settings layout
             InitializeSettingsFactory(new SettingsFactoryViewModel(true), this, Settings.Config, options);
+
+            AfterSaveEvent += () => {
+                // Dispose view
+                (App.StaticView.DataContext as AppViewModel)!.Content = null;
+            };
+
+            AfterCancelEvent += () => {
+                // Dispose view
+                (App.StaticView.DataContext as AppViewModel)!.Content = null;
+            };
         }
 
         public bool? ValidateBool(string key, bool value)
