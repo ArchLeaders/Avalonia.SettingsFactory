@@ -7,7 +7,7 @@ on:
 
 env:
   CORE_CSPROJ: "Avalonia.SettingsFactory.Core/Avalonia.SettingsFactory.Core.csproj"
-  CORE_BUILD: "${{ github.workspace }}/build_core"
+  CORE_BUILD: "./build_core"
   CORE_NUGET_SRC: "https://api.nuget.org/v3/index.json"
 
   CSPROJ: "Avalonia.SettingsFactory/Avalonia.SettingsFactory.csproj"
@@ -39,7 +39,7 @@ jobs:
         uses: battila7/get-version-action@v2
 
       - name: "Pack project"
-        run: dotnet pack ../${{ env.CORE_CSPROJ }} --no-restore --configuration Release -p:PackageVersion=${{ steps.version.outputs.version-without-v }} --output ${{ env.CORE_BUILD }}
+        run: dotnet pack ${{ env.CORE_CSPROJ }} --no-restore --configuration Release -p:PackageVersion=${{ steps.version.outputs.version-without-v }} --output ${{ env.CORE_BUILD }}
 
       - name: "Push package"
         run: dotnet nuget push ${{ env.CORE_BUILD }}/*.nupkg -k ${{ secrets.CORE_NUGET_AUTH }} -s ${{ env.CORE_NUGET_SRC }}
