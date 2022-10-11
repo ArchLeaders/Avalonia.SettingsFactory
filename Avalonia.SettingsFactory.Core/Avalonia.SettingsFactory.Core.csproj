@@ -4,6 +4,34 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>Avalonia Settings Factory Core</Title>
+    <Authors>Arch Leaders</Authors>
+    <Description>Dynamic UI factory that lets you seemlessly implement a dynamic settings editor in your Avalonia application.</Description>
+    <Copyright>© 2022 Arch Leaders</Copyright>
+    <PackageProjectUrl>https://github.com/ArchLeaders/Avalonia.SettingsFactory</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/ArchLeaders/Avalonia.SettingsFactory/tree/master/Avalonia.SettingsFactory.Core/</RepositoryUrl>
+    <PackageTags>avaloniaui;settings;config</PackageTags>
+    <PackageLicenseFile>MIT</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Avalonia.SettingsFactory\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\ReadMe.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="MIT">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

@@ -6,14 +6,14 @@
     <!--Avalonia doesen't support TrimMode=link currently,but we are working on that https://github.com/AvaloniaUI/Avalonia/issues/6892 -->
     <TrimMode>copyused</TrimMode>
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
-    <Title>AvaloniaSettingsFactory</Title>
+    <Title>Avalonia Settings Factory</Title>
     <Authors>Arch Leaders</Authors>
     <Description>Dynamic UI factory that lets you seemlessly implement a dynamic settings page in your AvaloniaUI-11 application.</Description>
     <Copyright>© 2022 Arch Leaders</Copyright>
-    <PackageProjectUrl>https://github.com/ArchLeaders/Avalonia.Builders/tree/master/Avalonia.Builders.Settings</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/ArchLeaders/Avalonia.Builders</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>avaloniaui</PackageTags>
+    <PackageProjectUrl>https://github.com/ArchLeaders/Avalonia.SettingsFactory</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ArchLeaders/Avalonia.SettingsFactory/tree/master/Avalonia.SettingsFactory/</RepositoryUrl>
+    <RepositoryType></RepositoryType>
+    <PackageTags>avaloniaui;settings;config</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <IncludeSymbols>True</IncludeSymbols>
@@ -51,5 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Avalonia.SettingsFactory.Core\Avalonia.SettingsFactory.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 </Project>
