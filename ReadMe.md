@@ -57,6 +57,15 @@ InitializeSettingsFactory(
 );
 ```
 
+The attached view must also have some assosiated XAML to tell the SettingsFactory where to place the setting elements.
+
+- `<StackPanel Name="Root">` | This will hold navigation buttons and folders.
+- `<Button Name="Save">` | This button will trigger the `Save` event.
+- `<Button Name="Cancel">` | This button will trigger the `Cancel` event.
+- `<ContentControl Content="{Binding ActiveElement}">` | This will hold the active settings page.
+
+For a basic fluent design page, check out the demo application — [SettingsView.axaml](https://github.com/ArchLeaders/Avalonia.SettingsFactory/blob/master/Avalonia.SettingsFactory.Demo/Views/SettingsView.axaml)
+
 <br>
 
 Each setting (property) can also be validated with custom logic using the ISettingsValidator interface and SettingsFactory indexing.
