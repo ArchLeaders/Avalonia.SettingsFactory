@@ -32,20 +32,20 @@ SettingsFactoryOptions options = new() {
         var result = await dialog.ShowAsync(App.StaticView);
         return result;
     },
+};
 
-    // Custom resource loader (must always return a Dictionary<string, string>)
-    FetchResource = (res) => JsonSerializer.Deserialize<Dictionary<string, string>>(File.ReadAllText(res))
+// Custom resource loader (must always return a Dictionary<string, string>)
+FetchResource = (res) => JsonSerializer.Deserialize<Dictionary<string, string>>(File.ReadAllText(res))
 
-    // Implement custom logic to occur after saving or cancelling
-    AfterSaveEvent += () => {
-        // Dispose view after saving
-        (App.StaticView.DataContext as AppViewModel).Content = null;
-    };
+// Implement custom logic to occur after saving or cancelling
+AfterSaveEvent += () => {
+    // Dispose view after saving
+    (App.StaticView.DataContext as AppViewModel).Content = null;
+};
 
-    AfterCancelEvent += () => {
-        // Dispose view after cancelling
-        (App.StaticView.DataContext as AppViewModel).Content = null;
-    };
+AfterCancelEvent += () => {
+    // Dispose view after cancelling
+    (App.StaticView.DataContext as AppViewModel).Content = null;
 };
 
 // Initialize the settings layout
