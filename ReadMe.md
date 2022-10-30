@@ -8,7 +8,7 @@ https://user-images.githubusercontent.com/80713508/195053696-49c2be25-ef9a-49ae-
 
 ## Usage
 
-Avalonia SettingsFactory works reading a decorated [settings object](https://github.com/ArchLeaders/Avalonia.SettingsFactory/blob/master/Avalonia.SettingsFactory.Demo/Models/Settings.cs) and sending the results into a [custom view](https://github.com/ArchLeaders/Avalonia.SettingsFactory/blob/master/Avalonia.SettingsFactory.Demo/Views/SettingsView.axaml.cs) that inherits the `SettingsFactory` UserControl included in this library.
+Avalonia SettingsFactory works by reading a decorated [settings object](https://github.com/ArchLeaders/Avalonia.SettingsFactory/blob/master/Avalonia.SettingsFactory.Demo/Models/Settings.cs) and sending the results into a [custom view](https://github.com/ArchLeaders/Avalonia.SettingsFactory/blob/master/Avalonia.SettingsFactory.Demo/Views/SettingsView.axaml.cs) that inherits the `SettingsFactory` UserControl included in this library.
 
 The SettingsFactory component can be initialized with the `InitializeSettingsFactory` function and an optional `SettingsFactoryOptions` instance to configure the front-end actions used by the internal library.
 
