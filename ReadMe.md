@@ -117,7 +117,7 @@ _\* Check out the [Demo](https://github.com/ArchLeaders/tree/master/Avalonia.Set
 
 ## Install
 
-Install with NuGet or build from [source]().
+Install with NuGet or build from [source](https://github.com/ArchLeaders/Avalonia.SettingsFactory).
 
 #### NuGet
 ```powershell
