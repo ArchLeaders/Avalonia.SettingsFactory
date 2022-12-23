@@ -205,7 +205,7 @@ namespace Avalonia.SettingsFactory
             }
 
             folder.Children.Add(categoryButton);
-            Categories.Add(category);
+            Categories.Add(category.SafeName());
         }
 
         internal StackPanel CreatePanel(string folder, string category)
