@@ -34,8 +34,6 @@ namespace Avalonia.SettingsFactory
         internal readonly Dictionary<string, StackPanel> Panels = new();
         internal readonly List<string> Categories = new();
 
-        private bool isBuilding = true;
-
         public SettingsFactory() { }
 
         public void InitializeSettingsFactory(SettingsFactoryViewModel binding, ISettingsValidator validator, ISettingsBase settingsBase, SettingsFactoryOptions? options = null)
