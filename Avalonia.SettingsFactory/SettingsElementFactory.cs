@@ -1,10 +1,10 @@
 ﻿#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 
-using Avalonia.SettingsFactory.Core;
-using Avalonia.SettingsFactory.Extensions;
 using Avalonia.Controls;
 using Avalonia.Layout;
 using Avalonia.Media;
+using Avalonia.SettingsFactory.Core;
+using Avalonia.SettingsFactory.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -88,8 +88,12 @@ namespace Avalonia.SettingsFactory
             TextBox element = new() {
                 VerticalAlignment = VerticalAlignment.Top
             };
-            element.GetObservable(TextBox.TextProperty).Subscribe(text => ValidationElement.Background = Factory.Validate(Name, text, true).ToBrush());
-            element.Text = value;
+
+            Factory.Registry.Add(() => {
+                element.GetObservable(TextBox.TextProperty).Subscribe(text => ValidationElement.Background = Factory.Validate(Name, text, true).ToBrush());
+                element.Text = value;
+            });
+
             Grid.SetColumn(element, 3);
 
             if (Setting.ShowBrowseButton) {
@@ -154,8 +158,12 @@ namespace Avalonia.SettingsFactory
                 HorizontalAlignment = HorizontalAlignment.Stretch,
                 Padding = new Thickness(10, 1, 0, 0),
             };
-            element.GetObservable(ComboBox.SelectedItemProperty).Subscribe(item => ValidationElement.Background = Factory.Validate(Name, (item as ComboBoxItem)?.Tag!.ToString(), true).ToBrush());
-            element.SelectedIndex = index;
+
+            Factory.Registry.Add(() => {
+                element.GetObservable(ComboBox.SelectedItemProperty).Subscribe(item => ValidationElement.Background = Factory.Validate(Name, (item as ComboBoxItem)?.Tag!.ToString(), true).ToBrush());
+                element.SelectedIndex = index;
+            });
+
             Grid.SetColumn(element, 3);
             Grid.SetColumnSpan(element, 2);
 
@@ -177,7 +185,11 @@ namespace Avalonia.SettingsFactory
                 OnContent = "",
                 OffContent = ""
             };
-            element.GetObservable(ToggleSwitch.IsCheckedProperty).Subscribe(isChecked => ValidationElement.Background = Factory.Validate(Name, isChecked, true).ToBrush());
+
+            Factory.Registry.Add(() => {
+                element.GetObservable(ToggleSwitch.IsCheckedProperty).Subscribe(isChecked => ValidationElement.Background = Factory.Validate(Name, isChecked, true).ToBrush());
+            });
+
             Grid.SetColumn(element, 3);
             Grid.SetColumnSpan(element, 2);
 

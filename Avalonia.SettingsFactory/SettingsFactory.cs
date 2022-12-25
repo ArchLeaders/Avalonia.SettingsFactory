@@ -33,6 +33,7 @@ namespace Avalonia.SettingsFactory
         internal readonly Dictionary<string, StackPanel> Folders = new();
         internal readonly Dictionary<string, StackPanel> Panels = new();
         internal readonly List<string> Categories = new();
+        internal readonly List<Action> Registry = new();
 
         public SettingsFactory() { }
 
@@ -49,8 +50,14 @@ namespace Avalonia.SettingsFactory
 
             var props = SettingsBase.GetType().GetProperties().Where(x => x.GetCustomAttributes<SettingAttribute>(false).Any());
 
+            // Create elements
             foreach (var prop in props) {
                 CreateElement(prop);
+            }
+
+            // Initialize values
+            foreach (var register in Registry) {
+                register();
             }
         }
 
