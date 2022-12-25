@@ -154,7 +154,7 @@ namespace Avalonia.SettingsFactory
                 HorizontalAlignment = HorizontalAlignment.Stretch,
                 Padding = new Thickness(10, 1, 0, 0),
             };
-            element.SelectionChanged += (s, e) => ValidationElement.Background = Factory.Validate(Name, (element.SelectedItem as ComboBoxItem)?.Tag!.ToString(), true).ToBrush();
+            element.GetObservable(ComboBox.SelectedItemProperty).Subscribe(item => ValidationElement.Background = Factory.Validate(Name, (item as ComboBoxItem)?.Tag!.ToString(), true).ToBrush());
             element.SelectedIndex = index;
             Grid.SetColumn(element, 3);
             Grid.SetColumnSpan(element, 2);
@@ -177,7 +177,7 @@ namespace Avalonia.SettingsFactory
                 OnContent = "",
                 OffContent = ""
             };
-            element.Click += (s, e) => ValidationElement.Background = Factory.Validate(Name, element.IsChecked, true).ToBrush();
+            element.GetObservable(ToggleSwitch.IsCheckedProperty).Subscribe(isChecked => ValidationElement.Background = Factory.Validate(Name, isChecked, true).ToBrush());
             Grid.SetColumn(element, 3);
             Grid.SetColumnSpan(element, 2);
 
