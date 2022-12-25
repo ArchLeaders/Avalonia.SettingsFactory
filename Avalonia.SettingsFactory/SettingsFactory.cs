@@ -93,8 +93,8 @@ namespace Avalonia.SettingsFactory
 
         internal void ValidateReferences(string? referenceKey)
         {
-            if (ReferenceKey != null && References.ContainsKey(ReferenceKey)) {
-                foreach (var element in References[ReferenceKey]) {
+            if (ReferenceKey != null && References.TryGetValue(ReferenceKey, out List<SettingsElementFactory>? value)) {
+                foreach (var element in value) {
                     element.ValidateElement();
                 }
             }
