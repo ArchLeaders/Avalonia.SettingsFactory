@@ -32,6 +32,9 @@ namespace Avalonia.SettingsFactory.Demo.Models
         [Setting("Random Path", "Some random folder on your PC", Category = "Random Category", Folder = "Random Folder", ShowBrowseButton = true)]
         public string RandomPath { get; set; } = "";
 
+        [Setting("Random Path", "Some random folder on your PC Some random folder on your PC Some random folder on your PC Some random folder on your PC Some random folder on your PC Some random folder on your PC Some random folder on your PC Some random folder on your PC ", Category = "Random Category", Folder = "Random Folder", ShowBrowseButton = true)]
+        public bool UseRandomPath { get; set; } = false;
+
         public ISettingsBase Save()
         {
             Debug.WriteLine(JsonSerializer.Serialize(this));

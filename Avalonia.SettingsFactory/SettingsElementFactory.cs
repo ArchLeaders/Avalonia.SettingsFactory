@@ -167,7 +167,7 @@ namespace Avalonia.SettingsFactory
 
         private Border CreateToggleElement(bool value)
         {
-            Border root = CreateBaseElement();
+            Border root = CreateBaseElement("6,*,10,80,37");
             Grid grid = (Grid)root.Child!;
 
             ToggleSwitch element = new() {
@@ -187,7 +187,7 @@ namespace Avalonia.SettingsFactory
             return root;
         }
 
-        private Border CreateBaseElement()
+        private Border CreateBaseElement(string columns = "6,*,10,1.2*,37")
         {
             Border root = new() {
                 CornerRadius = new(5),
@@ -197,7 +197,7 @@ namespace Avalonia.SettingsFactory
             root.Classes.Add("ElementBase");
 
             Grid child = new() {
-                ColumnDefinitions = new("6,*,10,1.2*,37")
+                ColumnDefinitions = new(columns)
             };
 
             StackPanel texts = new();
