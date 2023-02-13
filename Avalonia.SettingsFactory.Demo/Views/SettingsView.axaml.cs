@@ -3,6 +3,7 @@ using Avalonia.Markup.Xaml;
 using Avalonia.SettingsFactory.Demo.Models;
 using Avalonia.SettingsFactory.Demo.ViewModels;
 using Avalonia.SettingsFactory.ViewModels;
+using Avalonia.Styling;
 using Avalonia.Themes.Fluent;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -80,8 +81,7 @@ namespace Avalonia.SettingsFactory.Demo.Views
 
         public static bool? ValidateTheme(string value)
         {
-            App.Theme.Mode = value == "Dark" ? FluentThemeMode.Dark : FluentThemeMode.Light;
-            Application.Current!.Styles[0] = App.Theme;
+            Application.Current!.RequestedThemeVariant = value == "Dark" ? ThemeVariant.Dark : ThemeVariant.Light;
             return null;
         }
 

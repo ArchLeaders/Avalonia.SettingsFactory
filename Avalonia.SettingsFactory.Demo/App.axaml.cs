@@ -11,7 +11,6 @@ namespace Avalonia.SettingsFactory.Demo
     public partial class App : Application
     {
         public static AppView StaticView { get; set; } = null!;
-        public static FluentTheme Theme { get; set; } = new(new Uri($"avares://{nameof(Avalonia.SettingsFactory.Demo)}/Styles"));
 
         public override void Initialize() => AvaloniaXamlLoader.Load(this);
 
