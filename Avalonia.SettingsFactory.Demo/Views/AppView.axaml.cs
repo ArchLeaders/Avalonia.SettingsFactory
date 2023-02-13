@@ -8,7 +8,10 @@ namespace Avalonia.SettingsFactory.Demo.Views
         public AppView()
         {
             AvaloniaXamlLoader.Load(this);
+
+#if DEBUG
             this.AttachDevTools();
+#endif
         }
     }
 }

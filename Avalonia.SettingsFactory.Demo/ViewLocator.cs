@@ -7,7 +7,7 @@ namespace Avalonia.SettingsFactory.Demo
 {
     public class ViewLocator : IDataTemplate
     {
-        public Control? Build(object? param)
+        public IControl? Build(object? param)
         {
             var name = param!.GetType().FullName!.Replace("ViewModel", "View");
             var type = Type.GetType(name);
