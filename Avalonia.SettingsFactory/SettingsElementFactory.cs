@@ -153,7 +153,7 @@ namespace Avalonia.SettingsFactory
             Grid grid = (Grid)root.Child!;
 
             ComboBox element = new() {
-                Items = items,
+                ItemsSource = items,
                 VerticalAlignment = VerticalAlignment.Top,
                 HorizontalAlignment = HorizontalAlignment.Stretch,
                 Padding = new Thickness(10, 1, 0, 0),
