@@ -73,7 +73,7 @@ namespace Avalonia.SettingsFactory
                     }
                 }
 
-                return Settings.ContainsKey(name) ? Settings[name].GetElementValue() : null;
+                return Settings.TryGetValue(name, out SettingsElementFactory? value) ? value.GetElementValue() : null;
             }
         }
 
@@ -139,10 +139,10 @@ namespace Avalonia.SettingsFactory
             string key = $"{setting.Folder.SafeName()}.{setting.Category.SafeName()}";
 
             // Get element panel
-            var panel = Panels.ContainsKey(key) ? Panels[key] : CreatePanel(setting.Folder, setting.Category);
+            var panel = Panels.TryGetValue(key, out StackPanel? value) ? value : CreatePanel(setting.Folder, setting.Category);
 
             // Get header folder
-            var folder = Folders.ContainsKey(setting.Folder.SafeName()) ? Folders[setting.Folder.SafeName()] : CreateFolderPanel(setting.Folder);
+            var folder = Folders.TryGetValue(setting.Folder.SafeName(), out StackPanel? stackPanel) ? stackPanel : CreateFolderPanel(setting.Folder);
 
             // Create category navigation button
             if (!Categories.Contains(setting.Category.SafeName())) {
