@@ -1,3 +1,9 @@
+# ***Obsolete***
+
+*This library is depreciated in favor of https://github.com/ArchLeaders/ConfigFactory*
+
+---
+
 # Avalonia SettingsFactory
 
 [![NuGet](https://img.shields.io/nuget/v/AvaloniaSettingsFactory.svg)](https://www.nuget.org/packages/AvaloniaSettingsFactory) [![NuGet](https://img.shields.io/nuget/dt/AvaloniaSettingsFactory.svg)](https://www.nuget.org/packages/AvaloniaSettingsFactory)
